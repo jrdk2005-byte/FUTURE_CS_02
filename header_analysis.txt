@@ -1,0 +1,43 @@
+EMAIL HEADER ANALYSIS
+
+1. Phishing Email Analysis:
+- Sender Email: support@paypaal.com
+- Domain: paypaal.com (Fake domain)
+- SPF: FAIL
+- DKIM: FAIL
+- DMARC: FAIL
+- Observation:
+  The sender domain is spoofed. Authentication mechanisms are assumed to fail, indicating a high possibility of phishing.
+
+- Link Analysis:
+  http://fake-login-paypal.com
+  This is not an official PayPal domain and is likely a malicious phishing link.
+
+- Conclusion:
+  This email is identified as a PHISHING EMAIL due to fake domain, suspicious link, and urgent message.
+
+2. Legitimate Email Analysis:
+- Sender Email: support@paypal.com
+- Domain: paypal.com (Valid domain)
+- SPF: PASS
+- DKIM: PASS
+- DMARC: PASS
+- Observation:
+  The sender domain is valid and matches the official PayPal domain.
+
+- Link Analysis:
+  https://www.paypal.com/security
+  This is an official secure HTTPS link.
+
+- Conclusion:
+  This email is identified as a SAFE EMAIL.
+
+3. Key Differences:
+- Phishing email uses fake domain and urgent tone.
+- Legitimate email uses official domain and professional language.
+- Phishing email contains suspicious links.
+- Legitimate email contains secure links.
+
+4. Final Risk Summary:
+- Phishing Email: HIGH RISK
+- Legitimate Email: LOW RISK
