@@ -1,0 +1,61 @@
+API SECURITY ANALYSIS
+
+API Endpoint:
+https://jsonplaceholder.typicode.com/users
+
+1. Authentication Check:
+The API does not require any authentication.
+Anyone can access the data directly through the URL.
+
+Risk:
+Unauthorized users can access data.
+
+
+2. Data Exposure:
+The API exposes the following user data:
+- Name
+- Email
+- Phone number
+- Address (street, city, zipcode)
+- Company details
+
+Risk:
+Sensitive user information is publicly accessible.
+
+
+3. Access Control:
+No access control mechanism is implemented.
+
+Risk:
+No restriction on who can view or use the data.
+
+
+4. Input Validation:
+No visible input validation mechanisms.
+
+Risk:
+May allow malicious inputs in real-world APIs.
+
+5. Security Observations:
+- Public API without protection
+- Structured user data exposed
+- No authentication or authorization
+
+
+RISK LEVEL: MEDIUM
+
+
+RECOMMENDATIONS:
+
+- Implement authentication (API Key / OAuth)
+- Restrict access to authorized users only
+- Avoid exposing sensitive user data
+- Use HTTPS for secure communication
+- Apply rate limiting to prevent abuse
+- Validate all inputs
+
+CONCLUSION:
+
+The API is useful for testing purposes but lacks basic security controls.
+In real-world applications, such exposure can lead to data leakage and misuse.
+Proper authentication and access control should be implemented.
